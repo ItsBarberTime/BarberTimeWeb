@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarberTime - Premium Barbershop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-section">
+                <img src="logo.png" alt="BarberTime Logo" class="logo">
+                <h1 class="brand-name">BarberTime</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="barber-pole-container">
+                <div class="barber-pole"></div>
+            </div>
+            <h2>Premium Barbershop Experience</h2>
+            <p>Est. 2001 | Professional Grooming Since Day One</p>
+            <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Book Now</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Classic Haircut</h3>
+                    <p>Traditional, clean lines and fade cuts</p>
+                </div>
+                <div class="service-card">
+                    <h3>Beard Trim</h3>
+                    <p>Professional beard shaping and grooming</p>
+                </div>
+                <div class="service-card">
+                    <h3>Hot Shave</h3>
+                    <p>Luxurious straight razor shave</p>
+                </div>
+                <div class="service-card">
+                    <h3>Line Up</h3>
+                    <p>Perfect edge lines and detailing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Work</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="placeholder-image fade-cut">
+                        <span>Fade Cut</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-image undercut">
+                        <span>Undercut</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-image taper">
+                        <span>Taper</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-image classic">
+                        <span>Classic</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-image mohawk">
+                        <span>Mohawk</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-image textured">
+                        <span>Textured</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="section-subtitle">Sign up for appointment reminders via SMS or Email</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Your Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Select Service</option>
+                        <option value="haircut">Classic Haircut</option>
+                        <option value="beard">Beard Trim</option>
+                        <option value="shave">Hot Shave</option>
+                        <option value="lineup">Line Up</option>
+                    </select>
+                </div>
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" name="sms" required>
+                        <span>I agree to receive SMS notifications</span>
+                    </label>
+                    <label>
+                        <label>
+                        <input type="checkbox" name="email" required>
+                        <span>I agree to receive Email notifications</span>
+                    </label>
+                </div>
+                <p class="privacy-notice">By checking these boxes, you consent to our <a href="privacy.html">Privacy Policy</a> for appointment reminders and communications.</p>
+                <button type="submit" class="cta-button">Book Appointment</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 BarberTime. All rights reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="#contact">Contact</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
